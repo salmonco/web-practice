@@ -1,0 +1,125 @@
+:root {
+  --gray-color: #797979;
+  --light-gray-color: #eaeaea;
+  --font-small-size: 11px;
+  --font-medium-size: 13px;
+  --padding: 20px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--gray-color);
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid var(--light-gray-color);
+}
+
+.header__top ul {
+  display: flex;
+}
+
+.hearder__top__left {
+  margin: 0 0 0 -50px;
+}
+
+.hearder__top__right {
+  margin: 0 -100px 0 0;
+}
+
+.header__top ul li {
+  padding: 0 20px;
+  font-size: var(--font-small-size);
+  margin: 13px 0;
+  border-right: 1px solid var(--light-gray-color);
+}
+
+.header__top ul li:nth-of-type(5) {
+  border-right: none;
+}
+
+.header__top ul li i {
+  color: var(--gray-color);
+  padding: 0 0 0 5px;
+  font-size: 15px;
+}
+
+.header__top ul li a:hover {
+  color: var(--light-gray-color);
+}
+
+.logo {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  position: relative;
+  margin: 140px auto;
+}
+
+.logo img {
+  width: 267px;
+  height: 55px;
+  /* margin: 40px 0; */
+  z-index: 1;
+}
+
+.logo p {
+  opacity: 0;
+  font: bold 20px "arial";
+  color: black;
+  width: 267px;
+  height: 55px;
+  margin: 12px 17px;
+}
+
+.logo img,
+.logo p {
+  position: absolute;
+  left: 630px;
+  top: -100px;
+}
+
+.logo a:hover img {
+  opacity: 0;
+}
+
+.logo a:hover p {
+  opacity: 1;
+}
+
+.menu {
+  width: 100%;
+  border-bottom: 1px solid var(--light-gray-color);
+  border-top: 1px solid var(--light-gray-color);
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 100px;
+  padding: 5px 0;
+}
+
+.menu ul li {
+  font-size: var(--font-medium-size);
+}
+
+.menu ul li i {
+  padding: 0 10px;
+  border-left: 1px solid var(--light-gray-color);
+  border-right: 1px solid var(--light-gray-color);
+}
+
+.menu .search {
+  padding: 0 10px;
+  border-left: 1px solid var(--light-gray-color);
+  border-right: e1px solid var(--light-gray-color);
+}

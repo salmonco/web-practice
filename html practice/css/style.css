@@ -1,0 +1,59 @@
+@charset "UTF-8";
+:root {
+  --accent-color: #e8eaf6;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+header div #logo {
+    display:table-cell;
+	vertical-align:middle;
+	height:100%;
+	position:absolute;
+    font-family: "Oswald", sans-serif;
+    font-size: 30px;
+    color: black;
+    font-weight: 400;
+    line-height: 60px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#menu-btn {
+    display: none;
+    float: right;
+    margin-top: 5px;
+    width: 36px;
+    height: 36px;
+    padding: 6px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#menu-btn:hover {
+    background: #fff;
+    
+}
+
+#mainmenu {
+    font-family: "Quicksand";
+    float: right;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+
+    #menu-btn {
+        display: block;
+        position: relative;
+        float: right;
+    }
+}
